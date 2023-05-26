@@ -16,7 +16,7 @@ width:25px;
 
 }
 .square:hover {
-    animation: myfirst 2s 1;
+    animation: myfirst 1s 1;
 }
 
 @keyframes myfirst
