@@ -1,26 +1,32 @@
-.container{
-    background-color: black;
-    display:grid;
-    width: 90%;
-    height: 600px;
-    grid-template-columns: repeat(40,1fr);
-    grid-template-rows: repeat(20,1fr);
-    padding:30px;
-    /* row-gap:5px;
-    column-gap:5px; */
-}
-.square{
-background: rgb(29, 29, 29);
-height:25px;
-width:25px;
-
-}
-.square:hover {
-    animation: myfirst 1s 1;
-}
-
-@keyframes myfirst
-{
-    0%      {background:red;}
-    100%    {background:rgb(29, 29, 29);}
-}
+* {
+    box-sizing: border-box;
+  }
+  
+  body{
+    background: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+  }
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+  }
+  .square{
+    background-color: #1d1d1d;
+    box-shadow: 0 0 2px #000;
+    height: 16px;
+    width: 16px;
+    margin: 2px;
+    transition: 5s ease;
+  }
+  
+  .square:hover{
+    transition-duration: 0s;
+  }
